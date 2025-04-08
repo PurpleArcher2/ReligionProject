@@ -38,7 +38,7 @@
 .navbar-right li a {
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  font-weight: bold;
   padding: 0.5rem 0;
   transition: color 0.3s ease;
   position: relative;

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia Challenge - Game</title>
+    <link rel="stylesheet" href="css/game.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body class="game-page">
+    <nav class="navbar">
+      <div class="navbar-left">
+        <img src="./assets/cross.png" alt="Logo" class="nav-logo" />
+        <h1 class="nav-title">Our Project</h1>
+      </div>
+      <ul class="navbar-right">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">Map</a></li>
+        <li><a href="./triviaintro.html">Trivia</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="game-header">
+        <h2>Trivia Challenge</h2>
+        <div class="stats">
+          <span id="question-number">Question 1/10</span>
+          <span id="score">Score: 0</span>
+        </div>
+      </div>
+
+      <div class="question-container">
+        <h3 id="question-text">Question goes here</h3>
+        <div class="options-container" id="options">
+          <!-- Options will be added here via JavaScript -->
+        </div>
+      </div>
+
+      <div class="feedback" id="feedback"></div>
+
+      <button id="next-btn" class="btn">Next Question</button>
+    </div>
+
+    <script src="./js/question.js"></script>
+    <script src="./js/game.js"></script>
+  </body>
+</html>
