@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Gloock&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gloock', serif;
+}
+
+:root {
+    --white: #ffffff;
+    --royal_blue: #4169E1;
+    --soft_gold: #FFD700;
+    --crimson_red: #B22222;
+    --deep_purple: #4B0082;
+    
+    /* Modern palette additions */
+    --navy: #1A2238;
+    --teal: #0D7377;
+    --light-gold: #F9F871;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: radial-gradient(circle at center, #ffffff 0%, #FFD700 100%);
+    position: relative;
+}
+
+/* Modernized navbar */
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: var(--white); /* Using navy with transparency */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(26, 34, 56, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.navbar .logo {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 35px;
+    position: relative;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 700;
+    transition: .3s;
+    font-family: 'Poppins', sans-serif;
+    color: var(--navy); /* Darker color for better contrast */
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+/* Updated underline animation color */
+.navbar ul li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--royal_blue); /* Using teal for a modern touch */
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.navbar ul li:hover::after,
+.navbar ul li.active::after {
+    width: 100%;
+}
+
+.navbar ul li:hover a,
+.navbar ul li.active a {
+    color: var(--royal_blue); /* Matching teal color */
+}
+
+/* Hero section */
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Light beams effect */
+.light-beams {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, transparent 0%, transparent 50%, rgba(255, 215, 0, 0.2) 100%);
+    opacity: 0;
+    animation: pulse 6s infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes pulse {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.jesus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.jesus img {
+    max-width: 300px;
+    transition: transform 0.7s ease, box-shadow 0.7s ease;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(255, 215, 0, 0.5);
+}
+
+.jesus img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 100px rgba(255, 215, 0, 0.8);
+}
+
+.jesus img::before, .jesus img::after{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent, transparent, transparent, skyblue);
+    transform: rotate(0deg);
+    animation: rotate-border 10s linear infinite;
+}
+
+@keyframes rotate-border{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.cloud {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    width: 50vw;
+    max-width: 500px;
+    transition: all 2s cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: 0.5s;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
+}
+
+.cloud-left {
+    left: 50%;
+    transform: translate(-75%, -50%);
+}
+
+.cloud-right {
+    right: 50%;
+    transform: translate(75%, -50%);
+}
+
+/* Animation classes */
+.cloud.animate-left {
+    transform: translate(-150%, -50%);
+    opacity: 0.5;
+}
+
+.cloud.animate-right {
+    transform: translate(150%, -50%);
+    opacity: 0.5;
+}
+
+.quote-container {
+    position: absolute;
+    bottom: 10vh;
+    width: 100%;
+    text-align: center;
+    color: var(--navy);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease, transform 2s ease;
+    transition-delay: 2s;
+    padding: 0 20px;
+}
+
+.quote-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.quote-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+}
+
+/* Modern scripture reference style */
+.quote-container .reference {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+/* Particle effect */
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: float 15s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(10px, -10px); }
+}
