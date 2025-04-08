@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Gloock&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gloock", serif;
+}
+
+.intro-page{
+    text-align: center;
+    margin-top: 30vh;
+}
+
+.container h1{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+.intro-text p{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+.btn {
+  background-color: #4d5bf9;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #3949ab;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.question-container {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-btn {
+  background-color: #e3e8f0;
+  border: 1px solid #cfd8dc;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s;
+}
+
+.option-btn:hover:not([disabled]) {
+  background-color: #d1d9e6;
+}
+
+.option-btn.correct-answer {
+  background-color: #4caf50;
+  color: white;
+}
+
+.option-btn.wrong-answer {
+  background-color: #f44336;
+  color: white;
+}
+
+.feedback {
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.feedback.correct {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #2e7d32;
+}
+
+.feedback.incorrect {
+  background-color: rgba(244, 67, 54, 0.2);
+  color: #c62828;
+}
+
+#next-btn {
+  display: none;
+}
