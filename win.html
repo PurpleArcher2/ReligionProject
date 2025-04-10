@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YOU WON!</title>
+    <link rel="stylesheet" href="./css/win.css" />
 </head>
 <body>
-    
+    <video autoplay muted loop class="bg-video">
+        <source src="./assets/Heaven.mov" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <h1>Congratulations!</h1>
+        <div class="score-display">
+        <p>You can go to Heaven!</p>
+        </div>
+        <div class="button">
+        <button id="home-btn" class="btn">RETURN</button>
+        </div>
+    </div>
+
+    <script src="./js/triviaintro.js"></script>
 </body>
 </html>
