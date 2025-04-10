@@ -7,6 +7,13 @@
   font-family: "Gloock", serif;
 }
 
+html,
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
 .intro-page{
     text-align: center;
     margin-top: 30vh;

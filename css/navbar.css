@@ -1,11 +1,15 @@
+@import url(./variables.css);
 
 .navbar {
+  position: fixed;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background-color: #f8f9fa;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 .navbar-left {
@@ -44,8 +48,9 @@
   position: relative;
 }
 
-.navbar-right li a:hover {
-  color: #007bff;
+.navbar-right li a:hover,
+.navbar-right li a.active {
+  color: var(--royal_blue);
 }
 
 .navbar-right li a::after {
@@ -55,8 +60,12 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #007bff;
+  background-color: var(--royal_blue);
   transition: width 0.3s ease;
+}
+
+.navbar-right li a.active::after{
+  width: 100%;
 }
 
 .navbar-right li a:hover::after {
