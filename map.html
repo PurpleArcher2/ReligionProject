@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesus' Life and Ministry Map</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <link rel="stylesheet" href="./css/map.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="./assets/cross.png" alt="Logo" class="nav-logo">
+            <h1 class="nav-title">Our Project</h1>
+        </div>
+        <ul class="navbar-right">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./map.html" class="active">Map</a></li>
+            <li><a href="./triviaintro.html">Trivia</a></li>
+        </ul>
+    </nav>
+
+    <div id="map"></div>
+    
+    <!-- Location details modal window -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modalTitle" class="modal-title">Location Title</h2>
+            <div id="modalText" class="modal-text">Event description will appear here.</div>
+            <div id="videoContainer" class="video-container">
+                <p>Add your video content here (GIF or MP4)</p>
+            </div>
+            <div id="references"></div>
+        </div>
+    </div>
+    
+    <!-- Welcome/introduction modal -->
+    <div id="welcomeModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn" id="welcomeCloseBtn">&times;</span>
+            <h2 class="modal-title">The Life and Ministry of Jesus</h2>
+            <div class="modal-text">
+                <p>Welcome to this interactive map exploring the major locations from Jesus' life and ministry as recorded in the New Testament.</p>
+                
+                <h3>How to Use This Map:</h3>
+                <ul class="instruction-list">
+                    <li>Each numbered marker represents a significant location in Jesus' life.</li>
+                    <li>Different colors represent different phases of his ministry.</li>
+                    <li>Hover over any marker to see the location name.</li>
+                    <li>Click on any marker to learn about what happened at that location.</li>
+                    <li>Use the zoom controls to explore the geography of the Holy Land.</li>
+                </ul>
+                
+                <h3>Color Key:</h3>
+                <div class="category-example"><span class="category-dot" style="background-color: #e41a1c;"></span> Birth & Early Life</div>
+                <div class="category-example"><span class="category-dot" style="background-color: #377eb8;"></span> Baptism & Temptation</div>
+                <div class="category-example"><span class="category-dot" style="background-color: #4daf4a;"></span> Ministry in Galilee</div>
+                <div class="category-example"><span class="category-dot" style="background-color: #984ea3;"></span> Ministry in Judea</div>
+                <div class="category-example"><span class="category-dot" style="background-color: #ff7f00;"></span> Passion Week</div>
+                <div class="category-example"><span class="category-dot" style="background-color: #ffff33;"></span> Resurrection & Ascension</div>
+                
+                <p>The map includes 23 key locations, covering the entire scope of Jesus' life from his birth in Bethlehem to his ascension from the Mount of Olives.</p>
+                
+                <p>Each location information window includes:</p>
+                <ul class="instruction-list">
+                    <li>A detailed description of what happened there</li>
+                    <li>Space for multimedia content</li>
+                    <li>Biblical references for further study</li>
+                </ul>
+            </div>
+            <div class="welcome-footer">
+                <button class="start-button" id="startExploring">Start Exploring</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/map.js"></script>
+</body>
+</html>

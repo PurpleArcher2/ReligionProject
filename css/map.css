@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Gloock&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url(./variables.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gloock", serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#map {
+    height: 100vh;
+    width: 100%;
+    z-index: 1; /* Ensure map has proper z-index */
+}
+.legend {
+    padding: 6px 8px;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    line-height: 24px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.8;
+    border-radius: 50%;
+}
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    max-width: 700px;
+    position: relative;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal-title {
+    margin-top: 0;
+    color: #2c3e50;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.modal-text {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.video-container {
+    width: 100%;
+    height: 300px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.video-container video{
+    width: 100%;
+    height: 100%;
+}
+/* Welcome modal specific styles */
+#welcomeModal .modal-content {
+    margin: 5% auto;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+.welcome-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+.start-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.start-button:hover {
+    background-color: #45a049;
+}
+/* Custom marker style */
+.custom-marker {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    line-height: 26px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background: blue;
+    border: 2px solid white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+.instruction-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.category-example {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.category-dot {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+/* Custom tooltip style */
+.custom-tooltip {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
