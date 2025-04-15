@@ -149,6 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
           "Jesus healed a blind man here and performed the miracle of feeding 5,000 people with just five loaves and two fish in a nearby area. This was the hometown of the disciples Philip, Andrew, and Peter.",
         category: "Ministry in Galilee",
         references: "Mark 8:22-26, Luke 9:10-17",
+        videoUrl: "./assets/blindman.mp4",
       },
       {
         id: 12,
@@ -158,6 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
           "Traditionally identified as the Mount of Transfiguration, where Jesus' appearance was transformed, his face shining like the sun and clothes becoming white as light. Moses and Elijah appeared, and God's voice proclaimed Jesus as his Son.",
         category: "Ministry in Galilee",
         references: "Matthew 17:1-9, Mark 9:2-8, Luke 9:28-36",
+        videoUrl: "./assets/transfiguration.mp4",
       },
       {
         id: 13,
@@ -167,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
           "Jesus encountered a Samaritan woman at Jacob's Well. Breaking social norms by speaking with her, he revealed her life story and offered 'living water.' Many Samaritans believed in him after this encounter.",
         category: "Ministry in Judea",
         references: "John 4:1-42",
+        videoUrl: "./assets/samaritanwoman.mp4",
       },
       {
         id: 14,
@@ -176,6 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
           "Home of Mary, Martha, and Lazarus, close friends of Jesus. Here Jesus raised Lazarus from the dead after he had been in the tomb for four days, one of his most dramatic miracles. Mary also anointed Jesus' feet here.",
         category: "Ministry in Judea",
         references: "John 11:1-44, John 12:1-8",
+        videoUrl: "./assets/washwash.mp4",
       },
       {
         id: 15,
@@ -185,6 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
           "Jesus healed blind Bartimaeus on the road to Jericho. In the city, he called to Zacchaeus, a tax collector who had climbed a sycamore tree to see him. Jesus' visit brought salvation to Zacchaeus' household.",
         category: "Ministry in Judea",
         references: "Mark 10:46-52, Luke 19:1-10",
+        videoUrl: "./assets/healingblind.mp4",
       },
       {
         id: 16,
@@ -195,15 +200,17 @@ document.addEventListener("DOMContentLoaded", function () {
         category: "Passion Week",
         references:
           "Matthew 21:1-11, Mark 11:1-11, Luke 19:28-44, John 12:12-19",
+        videoUrl: "./assets/palmsunday.mp4",
       },
       {
         id: 17,
         name: "Mount of Olives",
-        coordinates: [31.7788, 35.2425],
+        coordinates: [31.778, 35.2425],
         description:
           "Jesus often retreated here to pray and teach. He delivered the Olivet Discourse here, prophesying about the destruction of the Temple and end times. Later, he ascended to heaven from this location.",
         category: "Passion Week",
         references: "Matthew 24-25, Luke 21:5-38, Acts 1:9-12",
+        videoUrl: "./assets/recording.mp4",
       },
       {
         id: 18,
@@ -212,8 +219,8 @@ document.addEventListener("DOMContentLoaded", function () {
         description:
           "Jesus prayed in deep anguish the night before his crucifixion, saying 'Not my will, but yours be done.' His disciples fell asleep despite his request to keep watch. Judas betrayed him here with a kiss, leading to his arrest.",
         category: "Passion Week",
-        references:
-          "Matthew 26:36-56, Mark 14:32-52, Luke 22:39-53, John 18:1-11",
+        references: "Matthew 26:36-56, Mark 14:32-52, Luke 22:39-53, John 18:1-11",
+        videoUrl: "./assets/betrayal.mp4",
       },
       {
         id: 19,
@@ -222,8 +229,9 @@ document.addEventListener("DOMContentLoaded", function () {
         description:
           "The 'Place of the Skull' where Jesus was crucified between two criminals. Despite his suffering, he forgave his executioners, promised paradise to a repentant thief, and ensured care for his mother. Here he declared 'It is finished.'",
         category: "Passion Week",
-        references:
-          "Matthew 27:33-56, Mark 15:22-41, Luke 23:33-49, John 19:17-37",
+        references: "Matthew 27:33-56, Mark 15:22-41, Luke 23:33-49, John 19:17-37",
+          videoUrl: "./assets/crucifixion.mp4",
+
       },
       {
         id: 20,
