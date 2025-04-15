@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
       {
         id: 10,
         name: "Nain",
-         coordinates: [32.6306, 35.3486],
+        coordinates: [32.6306, 35.3486],
         description:
           "Jesus encountered a funeral procession for the only son of a widow. Moved with compassion, he raised the young man from the dead and restored him to his mother, causing great awe among the witnesses.",
         category: "Ministry in Galilee",
@@ -369,6 +369,9 @@ document.addEventListener("DOMContentLoaded", function () {
               element.style.marginLeft = "-20px";
               element.style.marginTop = "-20px";
               element.style.fontSize = "20px";
+              element.style.display = "flex";
+              element.style.justifyContent = "center";
+              element.style.alignItems = "Center";
               element.style.zIndex = "1000"; // Bring to front
             });
           }
