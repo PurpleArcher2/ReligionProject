@@ -19,9 +19,6 @@ body {
   position: relative;
 }
 
-/* NAVBAR HAS ITS OWN SEPERATE CSS FILE */
-
-/* Hero section */
 .hero-section {
   position: relative;
   width: 100vw;
@@ -32,7 +29,6 @@ body {
   align-items: center;
 }
 
-/* Light beams effect */
 .light-beams {
   position: absolute;
   top: 0;
@@ -119,7 +115,6 @@ body {
   transform: translate(75%, -50%);
 }
 
-/* Animation classes */
 .cloud.animate-left {
   transform: translate(-150%, -50%);
   opacity: 0.5;
@@ -156,7 +151,6 @@ body {
   letter-spacing: 1px;
 }
 
-/* Modern scripture reference style */
 .quote-container .reference {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -165,7 +159,6 @@ body {
   margin-top: 5px;
 }
 
-/* Particle effect */
 .particles {
   position: absolute;
   top: 0;
@@ -272,7 +265,6 @@ body {
   }
 }
 
-/* Animation for popup appearance */
 @keyframes popup-appear {
   0% {
     opacity: 0;
