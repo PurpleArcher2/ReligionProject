@@ -21,7 +21,6 @@ body {
 
 /* NAVBAR HAS ITS OWN SEPERATE CSS FILE */
 
-
 /* Hero section */
 .hero-section {
   position: relative;
@@ -194,4 +193,102 @@ body {
   50% {
     transform: translate(10px, -10px);
   }
+}
+
+.verse-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3), 0 0 50px rgba(255, 215, 0, 0.5);
+  padding: 30px;
+  max-width: 500px;
+  width: 80%;
+  text-align: center;
+  z-index: 1000;
+  animation: glow 2s infinite alternate;
+  font-family: "Cinzel", serif;
+  color: var(--navy);
+}
+
+.verse-text {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+.verse-reference {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--navy);
+  margin-bottom: 25px;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.close-popup {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(65, 105, 225, 0.3);
+  padding: 10px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  color: var(--navy);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.close-popup:hover {
+  background: rgba(255, 215, 0, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  backdrop-filter: blur(3px);
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3), 0 0 50px rgba(255, 215, 0, 0.3);
+  }
+  to {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3), 0 0 70px rgba(255, 215, 0, 0.7);
+  }
+}
+
+/* Animation for popup appearance */
+@keyframes popup-appear {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.verse-popup.active {
+  display: block;
+  animation: popup-appear 0.5s ease forwards;
+}
+
+.overlay.active {
+  display: block;
 }
