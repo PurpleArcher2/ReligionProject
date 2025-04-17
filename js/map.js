@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Bethlehem",
         coordinates: [31.7054, 35.2072],
         description:
-          "Jesus was born in Bethlehem to fulfill the prophecy in Micah 5:2. Mary and Joseph traveled there for a census ordered by Caesar Augustus. Jesus was born in humble conditions, placed in a manger, and visited by shepherds who were told of his birth by angels.",
+          "Jesus was born in Bethlehem to fulfill the prophecy in Micah 5:2. Mary and Joseph traveled there for a census ordered by Caesar Augustus. Jesus was born in humble conditions, placed in a manger, and visited by shepherds who were told of His birth by angels.",
         category: "Birth & Early Life",
         references: "Matthew 2:1-12, Luke 2:1-20",
         videoUrl: "./assets/Christmas_video.mp4",
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Nazareth",
         coordinates: [32.7021, 35.303],
         description:
-          "Jesus' hometown where he grew up with Mary and Joseph after returning from Egypt. He spent his childhood and early adult years here as a carpenter. Later, when he returned to preach in the synagogue, he was rejected by the townspeople.",
+          "Jesus' hometown where He grew up with Mary and Joseph after returning from Egypt. He spent His childhood and early adult years here as a carpenter. Later, when He returned to preach in the synagogue, He was rejected by the townspeople.",
         category: "Birth & Early Life",
         references: "Matthew 2:23, Luke 2:39-40, Mark 6:1-6",
         videoUrl: "./assets/carpenter.mp4",
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Jerusalem (Temple)",
         coordinates: [31.7781, 35.2353],
         description:
-          "At age 12, Jesus was found in the Temple discussing scripture with religious teachers, astonishing them with his understanding. As an adult, he cleansed the Temple twice by driving out merchants and money changers who were defiling the sacred space.",
+          "At age 12, Jesus was found in the Temple discussing scripture with religious teachers, astonishing them with His understanding. As an adult, He cleansed the Temple twice by driving out merchants and money changers who were defiling the sacred space.",
         category: "Birth & Early Life",
         references: "Luke 2:41-52, John 2:13-22, Matthew 21:12-17",
         videoUrl: "./assets/temple.mp4",
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Jordan River",
         coordinates: [32.1021, 35.5497],
         description:
-          "Jesus was baptized by John the Baptist in the Jordan River. At his baptism, the heavens opened, the Holy Spirit descended like a dove, and God's voice proclaimed, 'This is my beloved Son, with whom I am well pleased.'",
+          "Jesus was baptized by John the Baptist in the Jordan River. At His baptism, the heavens opened, the Holy Spirit descended like a dove, and God's voice proclaimed, 'This is my beloved Son, with whom I am well pleased.'",
         category: "Baptism & Temptation",
         references: "Matthew 3:13-17, Mark 1:9-11, Luke 3:21-22",
         videoUrl: "./assets/baptism.mp4",
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Wilderness of Judea",
         coordinates: [31.8242, 35.3625],
         description:
-          "After his baptism, Jesus spent 40 days fasting in the wilderness where he was tempted by Satan. He faced three major temptations but overcame each one by quoting scripture, demonstrating perfect obedience to God's will.",
+          "After His baptism, Jesus spent 40 days fasting in the wilderness where He was tempted by Satan. He faced three major temptations but overcame each one by quoting scripture, demonstrating perfect obedience to God's will.",
         category: "Baptism & Temptation",
         references: "Matthew 4:1-11, Mark 1:12-13, Luke 4:1-13",
         videoUrl: "./assets/temptation.mp4",
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Capernaum",
         coordinates: [32.881, 35.575],
         description:
-          "Jesus made this fishing village his ministry headquarters in Galilee. Here he called several disciples, healed many people (including a centurion's servant and Peter's mother-in-law), taught in the synagogue, and delivered many parables.",
+          "Jesus made this fishing village His ministry headquarters in Galilee. Here He called several disciples, healed many people (including a centurion's servant and Peter's mother-in-law), taught in the synagogue, and delivered many parables.",
         category: "Ministry in Galilee",
         references: "Matthew 4:13, Mark 1:21-34, Luke 4:31-41",
         videoUrl: "./assets/cure.mp4",
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Sea of Galilee",
         coordinates: [32.8238, 35.583],
         description:
-          "Jesus performed many miracles here, including calming a storm, walking on water, and the miraculous catch of fish. He called his first disciples by these shores and taught large crowds from a boat just offshore.",
+          "Jesus performed many miracles here, including calming a storm, walking on water, and the miraculous catch of fish. He called His first disciples by these shores and taught large crowds from a boat just offshore.",
         category: "Ministry in Galilee",
         references: "Matthew 8:23-27, 14:22-33, Luke 5:1-11, Mark 4:1-9",
         videoUrl: "./assets/calmsea.mp4",
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Mount of Beatitudes",
         coordinates: [32.8808, 35.5556],
         description:
-          "Site of Jesus' famous Sermon on the Mount, where he delivered the Beatitudes and many core teachings of Christian ethics. Here he taught about being salt and light, the fulfillment of the law, prayer, fasting, and treating others.",
+          "Site of Jesus' famous Sermon on the Mount, where He delivered the Beatitudes and many core teachings of Christian ethics. Here He taught about being salt and light, the fulfillment of the law, prayer, fasting, and treating others.",
         category: "Ministry in Galilee",
         references: "Matthew 5-7",
         videoUrl: "./assets/advice.mp4",
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Cana",
         coordinates: [32.75, 35.3333],
         description:
-          "Jesus performed his first recorded miracle here at a wedding feast, turning water into wine when the hosts ran out. This miracle revealed his glory and caused his disciples to put their faith in him.",
+          "Jesus performed His first recorded miracle here at a wedding feast, turning water into wine when the hosts ran out. This miracle revealed His glory and caused His disciples to put their faith in him.",
         category: "Ministry in Galilee",
         references: "John 2:1-11",
         videoUrl: "./assets/wine.mp4",
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Nain",
         coordinates: [32.6306, 35.3486],
         description:
-          "Jesus encountered a funeral procession for the only son of a widow. Moved with compassion, he raised the young man from the dead and restored him to his mother, causing great awe among the witnesses.",
+          "Jesus encountered a funeral procession for the only son of a widow. Moved with compassion, He raised the young man from the dead and restored him to his mother, causing great awe among the witnesses.",
         category: "Ministry in Galilee",
         references: "Luke 7:11-17",
         videoUrl: "./assets/deadman.mp4",
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Mount Tabor (Transfiguration)",
         coordinates: [32.6817, 35.3917],
         description:
-          "Traditionally identified as the Mount of Transfiguration, where Jesus' appearance was transformed, his face shining like the sun and clothes becoming white as light. Moses and Elijah appeared, and God's voice proclaimed Jesus as his Son.",
+          "Traditionally identified as the Mount of Transfiguration, where Jesus' appearance was transformed, His face shining like the sun and clothes becoming white as light. Moses and Elijah appeared, and God's voice proclaimed Jesus as His Son.",
         category: "Ministry in Galilee",
         references: "Matthew 17:1-9, Mark 9:2-8, Luke 9:28-36",
         videoUrl: "./assets/transfiguration.mp4",
@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Samaria (Jacob's Well)",
         coordinates: [32.2133, 35.285],
         description:
-          "Jesus encountered a Samaritan woman at Jacob's Well. Breaking social norms by speaking with her, he revealed her life story and offered 'living water.' Many Samaritans believed in him after this encounter.",
+          "Jesus encountered a Samaritan woman at Jacob's Well. Breaking social norms by speaking with her, He revealed her life story and offered 'living water.' Many Samaritans believed in Him after this encounter.",
         category: "Ministry in Judea",
         references: "John 4:1-42",
         videoUrl: "./assets/samaritanwoman.mp4",
@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Bethany",
         coordinates: [31.7737, 35.2633],
         description:
-          "Home of Mary, Martha, and Lazarus, close friends of Jesus. Here Jesus raised Lazarus from the dead after he had been in the tomb for four days, one of his most dramatic miracles. Mary also anointed Jesus' feet here.",
+          "Home of Mary, Martha, and Lazarus, close friends of Jesus. Here Jesus raised Lazarus from the dead after he had been in the tomb for four days, one of His most dramatic miracles. Mary also anointed Jesus' feet here.",
         category: "Ministry in Judea",
         references: "John 11:1-44, John 12:1-8",
         videoUrl: "./assets/washwash.mp4",
@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Jericho",
         coordinates: [31.8468, 35.4442],
         description:
-          "Jesus healed blind Bartimaeus on the road to Jericho. In the city, he called to Zacchaeus, a tax collector who had climbed a sycamore tree to see him. Jesus' visit brought salvation to Zacchaeus' household.",
+          "Jesus healed blind Bartimaeus on the road to Jericho. In the city, He called to Zacchaeus, a tax collector who had climbed a sycamore tree to see Him. Jesus' visit brought salvation to Zacchaeus' household.",
         category: "Ministry in Judea",
         references: "Mark 10:46-52, Luke 19:1-10",
         videoUrl: "./assets/healingblind.mp4",
@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Bethphage (Triumphal Entry)",
         coordinates: [31.7761, 35.2472],
         description:
-          "Starting point of Jesus' triumphal entry into Jerusalem on Palm Sunday. He sent disciples to find a donkey, fulfilling Zechariah's prophecy. Crowds welcomed him with palm branches and shouts of 'Hosanna!'",
+          "Starting point of Jesus' triumphal entry into Jerusalem on Palm Sunday. He sent disciples to find a donkey, fulfilling Zechariah's prophecy. Crowds welcomed Him with palm branches and shouts of 'Hosanna!'",
         category: "Passion Week",
         references:
           "Matthew 21:1-11, Mark 11:1-11, Luke 19:28-44, John 12:12-19",
@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Mount of Olives",
         coordinates: [31.778, 35.2425],
         description:
-          "Jesus often retreated here to pray and teach. He delivered the Olivet Discourse here, prophesying about the destruction of the Temple and end times. Later, he ascended to heaven from this location.",
+          "Jesus often retreated here to pray and teach. He delivered the Olivet Discourse here, prophesying about the destruction of the Temple and end times. Later, He ascended to heaven from this location.",
         category: "Passion Week",
         references: "Matthew 24-25, Luke 21:5-38, Acts 1:9-12",
         videoUrl: "./assets/recording.mp4",
@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Garden of Gethsemane",
         coordinates: [31.7797, 35.2402],
         description:
-          "Jesus prayed in deep anguish the night before his crucifixion, saying 'Not my will, but yours be done.' His disciples fell asleep despite his request to keep watch. Judas betrayed him here with a kiss, leading to his arrest.",
+          "Jesus prayed in deep anguish the night before His crucifixion, saying 'Not my will, but yours be done.' His disciples fell asleep despite His request to keep watch. Judas betrayed Him here with a kiss, leading to His arrest.",
         category: "Passion Week",
         references: "Matthew 26:36-56, Mark 14:32-52, Luke 22:39-53, John 18:1-11",
         videoUrl: "./assets/betrayal.mp4",
@@ -227,10 +227,10 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Golgotha (Calvary)",
         coordinates: [31.7781, 35.2295],
         description:
-          "The 'Place of the Skull' where Jesus was crucified between two criminals. Despite his suffering, he forgave his executioners, promised paradise to a repentant thief, and ensured care for his mother. Here he declared 'It is finished.'",
+          "The 'Place of the Skull' where Jesus was crucified between two criminals. Despite His suffering, He forgave His executioners, promised paradise to a repentant thief, and ensured care for His mother. Here He declared 'It is finished.'",
         category: "Passion Week",
         references: "Matthew 27:33-56, Mark 15:22-41, Luke 23:33-49, John 19:17-37",
-          videoUrl: "./assets/crucifixion.mp4",
+        videoUrl: "./assets/crucifixion.mp4",
 
       },
       {
@@ -238,18 +238,20 @@ document.addEventListener("DOMContentLoaded", function () {
         name: "Garden Tomb",
         coordinates: [31.7835, 35.2297],
         description:
-          "One proposed site of Jesus' burial and resurrection. On the third day, women discovered the stone rolled away and the tomb empty. Jesus appeared to Mary Magdalene, who at first mistook him for a gardener.",
+          "One proposed site of Jesus' burial and resurrection. On the third day, women discovered the stone rolled away and the tomb empty. Jesus appeared to Mary Magdalene, who at first mistook Him for a gardener.",
         category: "Resurrection & Ascension",
         references: "Matthew 28:1-10, Mark 16:1-8, Luke 24:1-12, John 20:1-18",
+        videoUrl: "./assets/resurrection.mp4",
       },
       {
         id: 21,
         name: "Emmaus Road",
         coordinates: [31.837, 35.1079],
         description:
-          "After his resurrection, Jesus walked with two disciples who didn't recognize him. He explained how scripture pointed to him, and they finally recognized him when he broke bread. They rushed back to Jerusalem to share the news.",
+          "After His resurrection, Jesus walked with two disciples who didn't recognize Him. He explained how scripture pointed to Him, and they finally recognized Him when He broke bread. They rushed back to Jerusalem to share the news.",
         category: "Resurrection & Ascension",
         references: "Luke 24:13-35",
+        videoUrl: "./assets/roadtoemmaus.mp4",
       },
       {
         id: 22,
@@ -259,15 +261,17 @@ document.addEventListener("DOMContentLoaded", function () {
           "Jesus appeared to seven disciples who were fishing. After another miraculous catch, they shared breakfast on the shore. Here Jesus restored Peter with the threefold question 'Do you love me?' and command to 'Feed my sheep.'",
         category: "Resurrection & Ascension",
         references: "John 21:1-23",
+        videoUrl: "./assets/postresurrection.mp4",
       },
       {
         id: 23,
         name: "Mount of Olives (Ascension)",
         coordinates: [31.7788, 35.2425],
         description:
-          "Forty days after his resurrection, Jesus led his disciples to the Mount of Olives. After giving them final instructions to be his witnesses, he was taken up to heaven while they watched. Angels promised he would return the same way.",
+          "Forty days after his resurrection, Jesus led His disciples to the Mount of Olives. After giving them final instructions to be His witnesses, He was taken up to heaven while they watched. Angels promised He would return the same way.",
         category: "Resurrection & Ascension",
         references: "Acts 1:6-12",
+        videoUrl: "./assets/ascension.mp4",
       },
     ];
 
