@@ -1,7 +1,7 @@
 let currentQuestion = 0;
 let score = 0;
 let timer;
-let timeLeft = 12; // Changed from 10 to 12 seconds
+let timeLeft = 12; // Changed from 10 to 12
 let questionNumber = document.getElementById("question-number");
 let scoreDisplay = document.getElementById("score");
 let questionText = document.getElementById("question-text");
@@ -30,13 +30,20 @@ function initGame() {
 
     const timerDisplayElement = document.createElement("div");
     timerDisplayElement.id = "timer";
-    timerDisplayElement.textContent = "12s";
+    timerDisplayElement.textContent = "12s"; // Changed from 10s to 12s
 
     timerContainer.appendChild(timerBarElement);
     timerContainer.appendChild(timerDisplayElement);
 
-    // We'll handle this differently - no longer inserting after question number
-    // Instead we'll reorganize the stats container in HTML
+    // Insert timer container after question number
+    questionNumber.parentNode.insertBefore(
+      timerContainer,
+      questionNumber.nextSibling
+    );
+
+    // Update references
+    timerDisplay = document.getElementById("timer");
+    timerBar = document.getElementById("timer-bar");
   }
 
   showQuestion(currentQuestion);
@@ -78,43 +85,16 @@ function startTimer() {
 
   timer = setInterval(() => {
     timeLeft--;
-
-    // Check if timer has reached 0 first
-    if (timeLeft <= 0) {
-      // Set timeLeft to exactly 0 to prevent negative values
-      timeLeft = 0;
-      timerDisplay.textContent = `${timeLeft}s`;
-
-      // Update timer bar to be empty
-      timerBar.style.width = "0%";
-
-      // Clear the interval immediately to stop the timer
-      clearInterval(timer);
-
-      // Play time's up sound
-      timeUpSound.play();
-
-      // Call timeOut function to handle end of time
-      timeOut();
-
-      // Set the display color
-      timerDisplay.style.color = "#D70040";
-
-      // Return early to prevent further execution
-      return;
-    }
-
-    // Update display for non-zero values
     timerDisplay.textContent = `${timeLeft}s`;
 
     // Update timer bar
     const percentLeft = (timeLeft / 12) * 100; // Changed from 10 to 12
+
     timerBar.style.width = `${percentLeft}%`;
 
     // Make countdown more intense as time decreases
-    if (timeLeft <= 6) {
-      // Changed from 5 to 6 (half of 12)
-      // Change color to yellow at 6 seconds
+    if (timeLeft <= 5) {
+      // Change color to yellow at 5 seconds
       timerBar.style.backgroundColor = "#FFC107";
 
       // Play tick sound
@@ -124,8 +104,7 @@ function startTimer() {
       timerDisplay.style.fontWeight = "bold";
     }
 
-    if (timeLeft <= 3) {
-      // Fixed from 5 to 3 seconds
+    if (timeLeft <= 5) {
       // Change color to red at 3 seconds
       timerBar.style.backgroundColor = "#F44336";
 
@@ -136,6 +115,13 @@ function startTimer() {
 
       // Add pulse animation
       timerDisplay.style.animation = "pulse 0.5s infinite";
+    }
+
+    if (timeLeft <= 0) {
+      clearInterval(timer);
+      timeUpSound.play();
+      timeOut();
+      timerDisplay.style.color = "#D70040";
     }
   }, 1000);
 }
@@ -288,66 +274,7 @@ style.textContent = `
   75% { transform: translateX(-5px); }
   100% { transform: translateX(0); }
 }
-
-/* New styles for the rearranged stats layout */
-.stats {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 10px 0;
-}
-
-.stats > * {
-  flex: 1;
-  text-align: center;
-}
-
-.stats > *:first-child {
-  text-align: left;
-}
-
-.stats > *:last-child {
-  text-align: right;
-}
 `;
 document.head.appendChild(style);
 
-window.addEventListener("load", () => {
-  const statsContainer = document.querySelector(".stats");
-  if (statsContainer) {
-    statsContainer.innerHTML = "";
-
-    const questionNumberElement = document.createElement("span");
-    questionNumberElement.id = "question-number";
-    questionNumberElement.textContent = "Question 1/10";
-
-    const scoreElement = document.createElement("span");
-    scoreElement.id = "score";
-    scoreElement.textContent = "Score: 0";
-
-    const timerContainer = document.createElement("div");
-    timerContainer.id = "timer-container";
-
-    const timerBarElement = document.createElement("div");
-    timerBarElement.id = "timer-bar";
-
-    const timerDisplayElement = document.createElement("div");
-    timerDisplayElement.id = "timer";
-    timerDisplayElement.textContent = "12s";
-
-    timerContainer.appendChild(timerBarElement);
-    timerContainer.appendChild(timerDisplayElement);
-
-    statsContainer.appendChild(questionNumberElement);
-    statsContainer.appendChild(scoreElement);
-    statsContainer.appendChild(timerContainer);
-
-    questionNumber = document.getElementById("question-number");
-    scoreDisplay = document.getElementById("score");
-    timerDisplay = document.getElementById("timer");
-    timerBar = document.getElementById("timer-bar");
-  }
-
-  initGame();
-});
+window.addEventListener("load", initGame);
