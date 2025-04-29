@@ -78,6 +78,33 @@ function startTimer() {
 
   timer = setInterval(() => {
     timeLeft--;
+
+    // Check if timer has reached 0 first
+    if (timeLeft <= 0) {
+      // Set timeLeft to exactly 0 to prevent negative values
+      timeLeft = 0;
+      timerDisplay.textContent = `${timeLeft}s`;
+
+      // Update timer bar to be empty
+      timerBar.style.width = "0%";
+
+      // Clear the interval immediately to stop the timer
+      clearInterval(timer);
+
+      // Play time's up sound
+      timeUpSound.play();
+
+      // Call timeOut function to handle end of time
+      timeOut();
+
+      // Set the display color
+      timerDisplay.style.color = "#D70040";
+
+      // Return early to prevent further execution
+      return;
+    }
+
+    // Update display for non-zero values
     timerDisplay.textContent = `${timeLeft}s`;
 
     // Update timer bar
@@ -97,9 +124,10 @@ function startTimer() {
       timerDisplay.style.fontWeight = "bold";
     }
 
-    if (timeLeft <= 5) {
+    if (timeLeft <= 3) {
+      // Fixed from 5 to 3 seconds
       // Change color to red at 3 seconds
-      timerBar.style.backgroundColor = "#F44336";W
+      timerBar.style.backgroundColor = "#F44336";
 
       // Make text larger and white with text shadow for better visibility
       timerDisplay.style.fontSize = "1.3em";
@@ -108,13 +136,6 @@ function startTimer() {
 
       // Add pulse animation
       timerDisplay.style.animation = "pulse 0.5s infinite";
-    }
-
-    if (timeLeft <= 0) {
-      clearInterval(timer);
-      timeUpSound.play();
-      timeOut();
-      timerDisplay.style.color = "#D70040";
     }
   }, 1000);
 }
