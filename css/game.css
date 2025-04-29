@@ -20,12 +20,11 @@ body {
   position: fixed;
   z-index: 0;
   pointer-events: none;
-  width: 120px; /* adjust as needed */
+  width: 120px;
   height: auto;
-  opacity: 0.8; /* optional: slightly transparent */
+  opacity: 0.8;
 }
 
-/* Positioning for each corner */
 .bg-left {
   bottom: 0;
   left: 0;
